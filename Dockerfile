@@ -20,7 +20,7 @@ RUN tar -xzf app.tar.gz
 # 再次使用 alpine 作为最终的运行环境
 FROM alpine:latest
 
-# (最佳实践) 创建一个非 root 用户来运行程序，更安全
+# 创建一个非 root 用户来运行程序，更安全
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
 
