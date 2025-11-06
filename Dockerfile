@@ -11,7 +11,7 @@ WORKDIR /app
 # 下载指定的文件
 # -L: 允许 curl 跟随重定向 (GitHub Releases 常用)
 # -o: 将下载的文件重命名为 app.tar.gz
-RUN curl -L "https://github.com/TimmyOVO/deepseek-ocr.rs/releases/latest/download/deepseek-ocr-alpine-linux.tar.gz" -o app.tar.gz
+RUN curl -L "https://github.com/TimmyOVO/deepseek-ocr.rs/releases/download/v0.3.7/deepseek-ocr-alpine-linux.tar.gz" -o app.tar.gz
 
 # 解压
 RUN tar -xzf app.tar.gz
