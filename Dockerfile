@@ -34,7 +34,7 @@ VOLUME /home/appuser
 # 切换到非 root 用户
 USER appuser
 
-# 暴露端口 (根据 deepseek-ocr.rs 仓库的 Dockerfile，它默认使用 8000)
+# 暴露端口
 EXPOSE 8000
 
 # 容器启动时执行的命令
