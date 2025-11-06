@@ -140,10 +140,6 @@ curl -X POST http://localhost:8000/v1/chat/completions \
             "image_url": {
               "url": "data:image/jpeg;base64,YOUR_BASE64_IMAGE"
             }
-          },
-          {
-            "type": "text",
-            "text": "请识别这张图片中的文字"
           }
         ]
       }
