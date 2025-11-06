@@ -27,8 +27,9 @@ WORKDIR /app
 # 从 "builder" 阶段复制解压后的可执行文件到当前阶段
 COPY --from=builder /app/deepseek-ocr-server .
 
-# 将工作目录的所有权交给新创建的用户
-RUN chown appuser:appgroup /app
+RUN chown appuser:appgroup deepseek-ocr-server
+
+VOLUME /home/appuser
 
 # 切换到非 root 用户
 USER appuser
